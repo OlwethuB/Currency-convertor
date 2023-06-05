@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Currency converter</title>
+</head>
+
+<body>
+    <!-- Currency Converter -->
+    <h1 class="heading text-center display-2">
+        Currency Converter
+    </h1>
+    <hr>
+    <div class="container">
+        <div class="convert">
+            <div class="put-box">
+                <label for="oamount">
+                    Amount to Convert :
+                </label>
+                <input type="number" class="form-input" id="input" name="input" placeholder="Enter Degree" value="0">
+            </div>
+            <div class="row">
+
+                <div class="From">
+                    <div class="from-text">
+                        <span class="F-text">From</span>
+                    </div>
+                    <select class="select-from" id="Fcurrency">
+                        <option value="">Select One …</option>
+                        <option value="USD">Dollar (American)</option>
+                        <option value="BWP">Pula (Botswana)</option>
+                        <option value="CAD">Dollar (Canadian)</option>
+                        <option value="EUR">Euros (Europe)</option>
+                        <option value="GBP">Pounds (United Kingdom)</option>
+                        <option value="JPY">Yen (Japanese)</option>
+                        <option value="MUR">Rupee (Mauritius)</option>
+                        <option value="MXN">Peso (Mexico)</option>
+                        <option value="ZAR">Rands (South Africa)</option>
+                    </select>
+                </div>
+
+
+                <div class="To">
+                    <div class="to-text">
+                        <span class="T-text">To</span>
+                    </div>
+                    <select class="select-to" id="Tcurrency">
+                        <option value="">Select One …</option>
+                        <option value="USD">Dollar (American)</option>
+                        <option value="BWP">Pula (Botswana)</option>
+                        <option value="CAD">Dollar (Canadian)</option>
+                        <option value="EUR">Euros (Europe)</option>
+                        <option value="GBP">Pounds (United Kingdom)</option>
+                        <option value="JPY">Yen (Japanese)</option>
+                        <option value="MUR">Rupee (Mauritius)</option>
+                        <option value="MXN">Peso (Mexico)</option>
+                        <option value="ZAR">Rands (South Africa)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="R-box">
+
+                <!-- convert button -->
+                <button class="con-btn" type="submit">
+                    Convert
+                </button>
+                <!-- reset button -->
+                <button class="res-btn" onclick="clearVal()">
+                    Reset
+                </button>
+            </div>
+
+        </div>
+
+        <div id="finalAmount" class="res">
+
+            <!-- Display the converted amount -->
+            <h2>Converted Amount :
+                <span class="finalValue" style="color:green;">
+                </span>
+            </h2>
+        </div>
+    </div>
+
+
+
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
